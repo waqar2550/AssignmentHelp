@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment Help</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-DvX9A8k+UULstv1rHedfn0PGJvzlI8gO9b+yw6pxYb3ZM+28LGtvRVgizmbM6qip0QOJzI7eZpZMdX6zDElWGg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- NAVEBAR START FROM HERE  -->
+    <div class="py-3">
+        <nav class="relative px-4 py-4 flex justify-between items-center">
+            <a class="text-3xl font-bold leading-none" href="#">
+                <img class="w-full h-auto logo w-32 h-32" src="images/logo.png" alt="your image description" />
+            </a>
+            <div class="lg:hidden">
+                <button class="navbar-burger flex items-center text-gray-600 dark:text-gray-300 p-3" onclick="toggleMenu()">
+            <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+            </div>
+            <ul id="menu" class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6 NavebarItems">
+                <li>
+                    <a class="text-sm text-gray-500 hover:text-gray-600 dark:text-gray-300 cursor-pointer" onclick="smoothScroll('#home')">Home</a>
+                </li>
+                <li>
+                    <a class="text-sm text-gray-500 hover:text-gray-600 dark:text-gray-300 cursor-pointer" onclick="smoothScroll('#about')">About Us</a>
+                </li>
+                <li>
+                    <a class="text-sm text-gray-500 hover:text-gray-600 dark:text-gray-300 cursor-pointer" onclick="smoothScroll('#Services')">Services</a>
+                </li>
+                <li>
+                    <a class="text-sm text-gray-500 hover:text-gray-600 dark:text-gray-300 cursor-pointer" onclick="smoothScroll('#Pricing')">Pricing</a>
+                </li>
+                <li>
+                    <a class="text-sm text-gray-500 hover:text-gray-600 dark:text-gray-300 cursor-pointer" onclick="smoothScroll('#contact')">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- HERO SECTION STARTS FROM HERE  -->
+
+    <a href="https://wa.me/+923096235610" target="_blank" class="mr-4  icon whats-app">
+        <i class="fab fa-whatsapp text-green-500 text-3xl"></i>
+    </a>
+    <section id="home" class="flex flex-col md:flex-row justify-between items-center my-8">
+        <div class="w-full md:w-1/2 px-8 order-2 md:order-1">
+            <h2 class="text-3xl font-bold mb-4">
+                Collaborate with Awesome Developers
+            </h2>
+            <p class="text-lg leading-7 mb-6">
+                Looking for help with your Computer Science assignments? Collaborate with our team of experienced developers to get the best results.
+            </p>
+            <a href="https://wa.me/+923096235610" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-8 rounded-lg inline-block mb-4 md:mb-0">Let Us Help You</a
+        >
+        <p class="text-lg mb-4 mt-3">Trusted by 1000+ customers</p>
+        <div class="flex items-center">
+          <span class="text-xl font-bold mr-2">5.0</span>
+          <div class="stars-outer">
+            <div class="stars-inner"></div>
+          </div>
+          <span class="text-lg ml-2">(1000+ Reviews)</span>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 px-8 order-1 md:order-2">
+        <img
+          src="images/hero.png"
+          alt="Collaboration Image"
+          class="max-w-full h-auto"
+        />
+      </div>
+    </section>
+
+    <!-- ABOUT US PAGE STARTS FROM HERE  -->
+
+    <section id="about" class="bg-gray-100 py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold">About Us</h2>
+
+          <p
+            class="text-gray-800 font-serif leading-8 py-4 px-6 bg-gray-100 border-l-4 border-blue-500"
+          >
+            We are a team of passionate developers who are dedicated to helping
+            students with their Computer Science assignments. Our team is led by
+            a talented and experienced developer with a strong understanding of
+            programming languages such as C, C++, Java, JavaScript, Python,
+            HTML, CSS, ReactJs, NodeJs, ExpressJs, and many more in addition to
+            them. We are proficient in a wide range of computer science
+            concepts, including report writing, computer architecture, digital
+            logic design, operating system solutions, computer fundamentals,
+            programming tasks, data communication and networking, data
+            structures and algorithms, Java, Angular, and JavaScript
+            programming, software engineering projects, theory of automata, UML
+            designing, class diagram, use case diagram, and entity-relationship
+            diagram. With our extensive knowledge and skills in computer
+            science, we can deliver exceptional results for our clients. Whether
+            you need help with a programming task, a software engineering
+            project, or any other computer science-related task, our team has
+            the expertise to provide you with the solutions you need. We are
+            committed to delivering projects on time and to the highest
+            standard, and we always keep our clients' needs at the forefront of
+            everything we do.
+          </p>
+        </div>
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full md:w-1/2 px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="images/TeamBoy.jpeg"
+                alt="Developer"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Waqar Younas</h3>
+                <p class="text-gray-600 text-base">Developer</p>
+                <p class="mt-4">
+                  Waqar Younas is an experienced developer with a passion for
+                  crafting high-quality solutions. He possesses a deep
+                  understanding of various programming languages and frameworks
+                  and has an impressive track record of delivering exceptional
+                  results. His attention to detail, combined with his strong
+                  problem-solving skills, makes him a valuable asset to any
+                  project. With a customer-first approach, Waqar is committed to
+                  delivering projects that meet or exceed client expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img
+                src="images/TeamGirl.jpg"
+                alt="Developer"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Irsa Kanwal</h3>
+                <p class="text-gray-600 text-base">Developer</p>
+                <p class="mt-4">
+                  Irsa Kanwal is a skilled developer who is dedicated to
+                  creating top-notch solutions. She has a comprehensive
+                  knowledge of multiple programming languages and frameworks,
+                  and a proven record of delivering outstanding outcomes. Irsa's
+                  ability to meticulously analyze and solve problems makes her
+                  an invaluable asset to any team. She prioritizes the needs of
+                  her clients and always strives to exceed their expectations,
+                  making her an excellent choice for any project. Feel free to
+                  contact.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PAGE STARTS FROM HERE  -->
+<button id="scrollUpBtn" class="hidden fixed bottom-4 right-4 bg-gray-700 text-white rounded-full p-3 shadow-md">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+    <h2 id="Services" class="text-3xl font-bold w-full text-center mt-4">
+      Services
+    </h2>
+    <div
+      class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5"
+    >
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/c.png" alt="c" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">C Programming Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Get expert C programming help for your projects and assignments. Our
+            team offers clean code, debugging, GUI development, algorithm
+            design, and networking/multithreading implementation. Don't let C
+            programming hold you back. Contact us today.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/cpp.jpg" alt="cpp" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">C++ Programming Services</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Get expert C++ programming help for your assignments and projects.
+            Our team offers efficient code using cout, debugging, GUI
+            development, algorithm design, and networking/multithreading
+            implementation. Don't let C++ hold you back. Contact us today.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/java.png" alt="java" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Java Programming Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with your Java assignments or projects? Our expert team of
+            programmers can assist you with clean, efficient, and
+            well-documented code. We can help you with debugging, GUI
+            development, algorithm design, and networking/multithreading
+            implementation. Contact us today to learn more about our Java
+            programming services and how we can help you succeed.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/javascript.jpg"
+          alt="JavaScript"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">JavaScript Programming Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need JavaScript help? Our team of experts offers efficient and
+            well-documented code. We can help with debugging, front-end
+            development, algorithm design, and backend integration. Contact us
+            to succeed in JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/Python.png"
+          alt="Python"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Python Programming Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Get expert Python programming help for your projects and
+            assignments. Our team offers clean and efficient code, debugging,
+            data analysis, and web development. Contact us today to learn how we
+            can help you succeed in Python.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/html.png" alt="html" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">HTML Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with HTML? Our team can assist you with building efficient
+            and responsive web pages using HTML and CSS. Contact us today to
+            learn how we can help you create beautiful and functional websites.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/css.png" alt="css" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">CSS Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Struggling with CSS? Our team offers expert help with responsive
+            design, CSS frameworks, and building visually appealing web pages.
+            Let us help you create beautiful and functional websites. Contact us
+            today.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/react.png"
+          alt="reactJs"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">React.js Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with React.js? Our team offers expert assistance with
+            building dynamic and responsive user interfaces, state management,
+            and integrating with backend APIs. Contact us today to learn how we
+            can help you succeed in React.js.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/nodejs.png"
+          alt="nodeJs"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Node.js Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Node.js? Our team can assist you with building
+            scalable and efficient web applications using Node.js and popular
+            frameworks like Express.js. Contact us today to learn how we can
+            help you succeed in Node.js.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/expressjs.png"
+          alt="Express"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Express.js Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Express.js? Our team offers expert assistance with
+            building scalable and efficient web applications using the popular
+            Express.js framework. Contact us today to learn how we can help you
+            succeed in Express.js.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/report.jpg"
+          alt="Report writing"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">
+            Professional Report Writing Services
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Struggling with report writing? Our team of experienced writers can
+            help you with professional and well-researched reports on any topic.
+            We offer custom reports, business reports, technical reports, and
+            academic reports. Contact us today to learn how we can help you with
+            your report writing needs.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/architecture.png"
+          alt="architecture"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Computer Architecture Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with computer architecture? Our team of experts can assist
+            you with designing efficient computer systems, understanding CPU
+            operations, memory hierarchies, and system-level optimizations.
+            Contact us today to learn how we can help you succeed in computer
+            architecture.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/dld.jpg" alt="DLD" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Digital Logic Design Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Struggling with Digital Logic Design (DLD)? Our team of experts can
+            help you with designing and analyzing digital circuits, Boolean
+            algebra, logic gates, combinational and sequential circuits, and
+            more. Contact us today to learn how we can help you succeed in
+            Digital Logic Design.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/OS.png" alt="OS" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Operating System Solutions</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Operating System (OS) assignments or projects? Our
+            team of experts can assist you with efficient and optimized code for
+            OS algorithms, process management, memory management, file systems,
+            and more. Contact us today to learn how we can help you with your
+            Operating System solutions.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/pf.jpg" alt="PF" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Computer Fundamentals Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Computer Fundamentals? Our team of experts can assist
+            you with understanding the basics of computer systems, including
+            hardware and software components, operating systems, data
+            representation, computer networks, and more. Contact us today to
+            learn how we can help you succeed in Computer Fundamentals.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/coding-task.jpg"
+          alt="Codind Tasks"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Programming Task Solutions</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Struggling with programming tasks? Our team of experienced
+            programmers can help you with efficient and well-documented code for
+            programming assignments, projects, and tasks. We offer help with a
+            variety of programming languages and platforms. Contact us today to
+            learn how we can help you with your programming task solutions.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/DCNS.jpg" alt="DCNS" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">
+            Data Communication and Networking Help
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Data Communication and Networking? Our team of
+            experts can assist you with understanding network architectures,
+            protocols, topologies, network security, wireless and mobile
+            networks, and more. Contact us today to learn how we can help you
+            succeed in Data Communication and Networking.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/DSA.png" alt="DSA" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">
+            Data Structures and Algorithms Help
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Struggling with Data Structures and Algorithms? Our team of experts
+            can assist you with designing and analyzing algorithms,
+            understanding data structures, sorting and searching techniques,
+            dynamic programming, graph algorithms, and more. Contact us today to
+            learn how we can help you succeed in Data Structures and Algorithms.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/DS.png" alt="DS" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Data Structure Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Data Structures? Our team of experts can assist you
+            with understanding data structures such as arrays, linked lists,
+            stacks, queues, trees, and graphs. We can also help you with
+            efficient and optimized algorithms for data manipulation and
+            analysis. Contact us today to learn how we can help you succeed in
+            Data Structures.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/software enginering projects.jpg"
+          alt="software engineering projects"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">
+            Software Engineering Project Help
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Struggling with Software Engineering projects? Our team of
+            experienced developers can help you with designing and developing
+            custom software solutions, including web applications, mobile
+            applications, desktop applications, and more. We offer full-stack
+            development services, project management, quality assurance, and
+            testing. Contact us today to learn how we can help you with your
+            Software Engineering projects.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/automata.png"
+          alt="automata"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Theory of Automata Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with the Theory of Automata? Our team of experts can
+            assist you with understanding formal languages, automata, regular
+            expressions, context-free grammars, Turing machines, and more. We
+            can also help you with designing and analyzing algorithms based on
+            these concepts. Contact us today to learn how we can help you
+            succeed in the Theory of Automata.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img class="w-full serviceImage" src="images/uml.png" alt="uml" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">UML Designing Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with UML Designing? Our team of experts can assist you
+            with creating and understanding UML diagrams, including use case
+            diagrams, class diagrams, sequence diagrams, activity diagrams, and
+            more. We can also help you with object-oriented design principles
+            and software architecture. Contact us today to learn how we can help
+            you with your UML Designing needs.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/usecase.jpg"
+          alt="usecase diagram"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Use Case Diagram Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with creating Use Case Diagrams? Our team of experts can
+            assist you with identifying system requirements, defining use cases,
+            creating use case diagrams, and more. We can also help you with
+            understanding use case scenarios and how they relate to the overall
+            system design. Contact us today to learn how we can help you with
+            your Use Case Diagram needs.
+          </p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg dark:shadow-gray-800">
+        <img
+          class="w-full serviceImage"
+          src="images/linus.jpg"
+          alt="linus"
+        />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Linux Help</div>
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Need help with Linux? Our team of experts can assist you with
+            installing and configuring Linux operating systems, troubleshooting
+            system errors, optimizing system performance, managing user accounts
+            and permissions, and more. We can also help you with Linux shell
+            scripting and programming. Contact us today to learn how we can help
+            you with your Linux needs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PRICING PAGE START FROM HERE  -->
+    
+    <div
+    class="container mx-auto flex flex-col px-10 py-10 text-center sm:text-left md:px-0 lg:flex-row lg:items-start">
+    <div class="mb-10 w-full space-y-4 lg:mb-0 mt-5" id="Pricing" >
+      <h1 class="text-5xl font-semibold text-gray-800 dark:text-gray-200">
+        Choose your Assignment Plan
+      </h1>
+      <p class="text-base font-medium text-gray-700 dark:text-gray-300">
+        We understand the challenges of studying computer science and want to help. Our affordable assignment packages are designed to meet the needs of every student. Whether you need basic assistance or comprehensive support, we've got you covered. With our expert team of computer science professionals, you can be sure your assignments are in good hands. Choose your plan today and let us help you achieve your academic goals.
+      </p>
+    </div>
+    <div
+      class="flex flex-col justify-center gap-7 rounded-lg border border-indigo-600 md:flex-row">
+      <div class="w-full md:w-1/3">
+        <div class="space-y-4 rounded-lg p-8">
+          <h6 class="text-xl font-semibold text-indigo-600 dark:text-white">
+            Basic
+          </h6>
+          <h4 class="text-3xl font-medium text-black dark:text-white">$60</h4>
+          <p class="text-base font-medium text-gray-600 dark:text-gray-300">
+            In this package I will do your basic computer science assignments
+          </p>
+          <ul>
+            <li class="flex items-center">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="mr-[10px] text-indigo-600"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+              </svg>
+              <span class="text-gray-600 dark:text-gray-200">1 Day Delivery</span>
+            </li>
+            <li class="flex items-center">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="mr-[10px] text-indigo-600"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+              </svg>
+              <span class="text-gray-600 dark:text-gray-200">1 Revision</span>
+            </li>
+            
+          </ul>
+          <button 
+            class="w-full rounded-md bg-indigo-600 py-2 px-5 text-sm font-medium text-white">
+          <a href="https://wa.me/+923096235610">Let Us Help You</a>
+            </button>
+        </div>
+        </div>
+        <div class="relative w-full bg-indigo-600 md:w-1/3">
+            <div class="absolute left-[50%] -translate-x-1/2 transform rounded-br-md rounded-bl-md bg-indigo-800 py-1 px-[10px] text-sm font-medium uppercase text-white">
+                Standard
+            </div>
+            <div class="mt-4 space-y-4 rounded-lg p-8 md:mt-0">
+
+                <h4 class="inline-flex items-center text-3xl font-medium text-white">
+                    $150
+
+                </h4>
+                <p class="text-base font-medium text-white">
+                    In this package I will do your standard computer science assignments
+                </p>
+                <ul>
+                    <li class="flex items-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mr-[10px] text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+              </svg>
+                        <span class="text-white">3 Day Delivery</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mr-[10px] text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+              </svg>
+                        <span class="text-white">Unlimited Revisions</span>
+                    </li>
+
+                </ul>
+                <button class="w-full rounded-md bg-white py-2 px-5 text-sm font-medium text-indigo-600">
+        <a href="https://wa.me/+923096235610"> Let Us Help You</a> 
+          </button>
+            </div>
+        </div>
+        <div class="w-full md:w-1/3">
+            <div class="space-y-4 rounded-lg p-8">
+                <h6 class="text-xl font-semibold text-indigo-600 dark:text-white">
+                    Premium
+                </h6>
+                <h4 class="text-3xl font-medium text-black dark:text-white">$200</h4>
+                <p class="text-base font-medium text-gray-600 dark:text-gray-300">
+                    In this package I will do your large , time taking and complex computer science assignments
+                </p>
+                <ul>
+                    <li class="flex items-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mr-[10px] text-indigo-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+              </svg>
+                        <span class="text-gray-600 dark:text-gray-200">5 days Delivery</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="mr-[10px] text-indigo-600" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+              </svg>
+                        <span class="text-gray-600 dark:text-gray-200">Unlimited Revision</span>
+                    </li>
+
+                </ul>
+                <button class="w-full rounded-md bg-indigo-600 py-2 px-5 text-sm font-medium text-white">
+          <a href="https://wa.me/+923096235610">Let Us Help You</a>  
+          </button>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <!-- FOOTER STARTS FFROM HERE  -->
+        <footer class="bg-gray-100 py-8" id="contact">
+            <div class="container mx-auto flex flex-wrap">
+                <div class="w-full lg:w-1/2 lg:pr-12">
+                    <h3 class="text-2xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex mx-5">
+                        <a href="https://wa.me/+923096235610" target="_blank" class="mr-4  icon">
+                            <i class="fab fa-whatsapp text-green-500 text-3xl "></i>
+                        </a>
+                        <a href="#" class="mr-4 icon">
+                            <i class="fab fa-facebook text-blue-500 text-3xl "></i>
+                        </a>
+                        <a href="#" class="mr-4 icon">
+                            <i class="fab fa-instagram text-pink-500 text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/4 lg:pr-12">
+                    <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li><a onclick="smoothScroll('#home')" class="cursor-pointer">Home</a></li>
+                        <li><a onclick="smoothScroll('#about')" class="cursor-pointer">About Us</a></li>
+                        <li><a onclick="smoothScroll('#Services')" class="cursor-pointer">Services</a></li>
+                        <li><a onclick="smoothScroll('#Pricing')" class="cursor-pointer">Pricing</a></li>
+                        <li><a onclick="smoothScroll('#contact')" class="cursor-pointer">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>
